@@ -1,0 +1,29 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <center><h1 style="background-color: RED; color: YELLOW">VIMAL TORMAL PODDAR BCA COLLEGE</h1>
+    <header>
+        <nav>
+            <a href="Default.aspx"> SUM </a> | 
+            <a href="Biodata.aspx"> Bio Data </a> |
+            <a href="Test.aspx""> Test </a> |
+        
+        </nav>
+    
+    </header>
+    <div>
+        <asp:ContentPlaceHolder id="cph1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+   </center>
+</body>
+</html>

@@ -1,15 +1,10 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="Biodata.aspx.vb" Inherits="Biodata" %>
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
+﻿<%@ Page Language="VB" MasterPageFile="~/MasterPage.master" AutoEventWireup="false" CodeFile="Biodata.aspx.vb" Inherits="Biodata" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="cph1" Runat="Server">
     <form id="form1" runat="server">
     <div align="center" 
-        style="background:red; font-size: x-large; font-weight: bold;" >
+        style="background:red; font-size:large; font-weight: bold;" >
     
         BIO-DATA FORM
         </div>
@@ -97,5 +92,4 @@
       </div>
 
     </form>
-</body>
-</html>
+</asp:Content>

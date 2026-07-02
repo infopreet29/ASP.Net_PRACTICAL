@@ -1,33 +1,18 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="Default.aspx.vb" Inherits="_Default" %>
+﻿<%@ Page Language="VB" MasterPageFile="~/MasterPage.master" AutoEventWireup="false" CodeFile="Default.aspx.vb" Inherits="_Default" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="cph1" Runat="Server">
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-    <style type="text/css">
-        #btnclear
-        {
-            width: 128px;
-        }
-    </style>
-
-</head>
-<body>
     <form id="form1" runat="server">
-    <div align="center" 
-        style="background:red; font-size: x-large; font-weight: bold;" >
-    
-        WELCOME TO VT PODDAR COLLEGE - SEM-5</div>
-        <br /> <br />
+   
+        <br />
         ENTER NO 1 :&nbsp;
     <asp:TextBox ID="txtno1" runat="server"></asp:TextBox>
     <br />
     <br />
     ENTER NO 2 : &nbsp;
     <asp:TextBox ID="txtno2" runat="server"></asp:TextBox>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <input type="text" id="txtthml" />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <br />
     <br />
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -48,5 +33,4 @@
     <asp:TextBox ID="txtresult" runat="server"></asp:TextBox>
 
     </form>
-</body>
-</html>
+</asp:Content>
