@@ -34,6 +34,8 @@
             <asp:ListItem>MCA</asp:ListItem>
             <asp:ListItem>MBA</asp:ListItem>
             <asp:ListItem>MCOM</asp:ListItem>
+            <asp:ListItem>MSCIT</asp:ListItem>
+            <asp:ListItem>BSCIT</asp:ListItem>
         </asp:DropDownList>
         <br />
         <br />

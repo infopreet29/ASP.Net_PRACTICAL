@@ -14,8 +14,8 @@
         <nav>
             <a href="Default.aspx"> SUM </a> | 
             <a href="Biodata.aspx"> Bio Data </a> |
-            <a href="Test.aspx""> Test </a> |
-        
+            <a href="Test.aspx"> Test </a> |
+            <a href="Employee.aspx"> Employee </a> |
         </nav>
     
     </header>

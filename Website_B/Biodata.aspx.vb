@@ -4,7 +4,7 @@ Partial Class Biodata
 
     Protected Sub btnSubmit_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnSubmit.Click
         Dim strData As String
-        strData = "NAME : " & txtname.Text & vbNewLine & "</BR>"
+        strData = "NAME : " & txtname.Text & "</BR>"
         strData = strData & "MOBILE : " & txtmobile.Text & "</BR>"
         strData = strData & "QUALIFICATION : " & cmbQualication.Text & "</BR>"
         strData = strData & "ADDRESS : " & txtaddr.Text & "</BR>"
@@ -35,5 +35,9 @@ Partial Class Biodata
             cmbState.Items.Add("RAJASTHAN")
             cmbState.Items.Add("DELHI")
         End If
+    End Sub
+
+    Protected Sub LinkButton1_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles LinkButton1.Click
+
     End Sub
 End Class
