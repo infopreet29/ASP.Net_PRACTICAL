@@ -110,6 +110,9 @@ Partial Class Employee
     End Sub
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+        If Session("user") Is Nothing Then
+            Response.Redirect("LoginPage.aspx")
+        End If
         If IsPostBack = False Then
             FillData()
         End If

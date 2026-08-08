@@ -11,12 +11,22 @@
 <body>
     <center><h1 style="background-color: RED; color: YELLOW">VIMAL TORMAL PODDAR BCA COLLEGE</h1>
     <header>
+        <asp:Label id="lbl_user" runat="server" ></asp:Label>
         <nav>
             <a href="Default.aspx"> SUM </a> | 
             <a href="Biodata.aspx"> Bio Data </a> |
             <a href="Test.aspx"> Test </a> |
             <a href="Employee.aspx"> Employee </a> |
-            <a href="ListBox.aspx"> List Box </a>
+            <a href="ListBox.aspx"> List Box </a> | 
+            <a href="Repeater_Demo.aspx"> Repeater </a> | 
+            <a href="BookDetils.aspx"> Books </a> | 
+            <a href="DataList_demo.aspx"> Data List </a> | 
+            <a href="FormViewDemo.aspx"> Form View </a>
+            
+            
+            <div style="margin-left:90%;" >
+                <a href="LoginPage.aspx"> Log Out </a>
+           </div>
         </nav>
     
     </header>
