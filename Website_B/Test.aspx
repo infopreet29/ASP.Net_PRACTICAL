@@ -4,8 +4,9 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cph1" Runat="Server">
     <form id="form1" runat="server">
-    <center> <h2> PAGE IS LOAD UNDER MASTER PAGE </h2> </center>
-
+    <center> <h2> PAGE IS LOAD UNDER MASTER PAGE </h2> 
+    <asp:Label id="lblData" runat="server" Text=""/>
+    </center>
 </form>
 </asp:Content>
 

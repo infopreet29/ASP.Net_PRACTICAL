@@ -45,6 +45,10 @@
         </asp:Repeater>
     
         <br />
+        <asp:Button ID="btnreload" runat="server" Height="35px" Text="RELOAD" 
+            Width="94px" />
+    
+        <br />
         <br />
 
     

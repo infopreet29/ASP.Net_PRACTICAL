@@ -13,15 +13,29 @@ Partial Class Repeater_Demo
         Dim cmd As New SqlCommand
         Dim ds As New DataSet
         Dim da As New SqlDataAdapter
-        cmd.CommandText = "Select * from EmpMst order by empno"
-        cmd.Connection = cn
-        da.SelectCommand = cmd
-        cn.Open()
-        da.Fill(ds)
-        cn.Close()
+        ' Retrieve cached data
+        If Cache("EmpRec") IsNot Nothing Then
+            ds = CType(Cache("EmpRec"), DataSet)
+        Else
+
+            cmd.CommandText = "Select * from EmpMst order by empno"
+            cmd.Connection = cn
+            da.SelectCommand = cmd
+            cn.Open()
+            da.Fill(ds)
+            cn.Close()
+        End If
         Repeater1.DataSource = ds.Tables(0)
         Repeater1.DataBind()
+
+        If Cache("EmpRec") Is Nothing Then
+            ' Insert data into Cache with a 30-minute absolute expiration
+            Cache.Insert("EmpRec", ds, Nothing, DateTime.Now.AddMinutes(1), System.Web.Caching.Cache.NoSlidingExpiration)
+        End If
         ds.Dispose() : da.Dispose() : cmd.Dispose()
     End Sub
 
+    Protected Sub btnreload_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnreload.Click
+        FillData()
+    End Sub
 End Class
